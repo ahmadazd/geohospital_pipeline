@@ -1,3 +1,19 @@
+Metadata-Version: 2.4
+Name: osm-hospitals-pipeline
+Version: 0.1.0
+Summary: Python data pipeline extracting hospital locations from OpenStreetMap into Bronze and Silver lakehouse zones.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: geopandas>=0.14.0
+Requires-Dist: pyarrow>=15.0.0
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: tenacity>=8.2.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: ruff>=0.4.0; extra == "dev"
+
 # GeoHospital Pipeline
 
 A small Python data pipeline that extracts hospital locations from OpenStreetMap and stores the output using a simple medallion architecture.
