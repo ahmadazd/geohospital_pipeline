@@ -1,0 +1,2 @@
+[console_scripts]
+geohospital_pipeline = geohospital_pipeline.cli:app
